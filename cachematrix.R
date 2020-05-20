@@ -22,9 +22,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
-cachemean <- function(x, ...) {
+##This function calculates the inverse of the special matrix returned by the above function.
+##If the inverse has already been caluculated or the matrix hasn't changed, then the function should retrieve the matrix from the cache.
+cacheSolve <- function(x, ...) {
   m <- x$getinverse()
   if(!is.null(i)) {
     message("getting cached data")
